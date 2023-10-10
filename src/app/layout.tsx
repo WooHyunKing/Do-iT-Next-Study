@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,12 +16,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {
-          <header>
-            <h1>Header</h1>
-            {children}
-          </header>
-        }
+        <header className={styles.header}>
+          <Link href="/">
+            <Image
+              src="/images/AjouLogo.png"
+              width={100}
+              height={100}
+              alt="AjouLogo"
+            />
+          </Link>
+
+          <Link className={styles.link} href="/ultra/course">
+            코스
+          </Link>
+          <Link className={styles.link} href="/ultra/organization">
+            조직
+          </Link>
+          <Link className={styles.link} href="/ultra/calendar">
+            캘린더
+          </Link>
+          <Link className={styles.link} href="/ultra/messages">
+            메시지
+          </Link>
+        </header>
+        {children}
       </body>
     </html>
   );
