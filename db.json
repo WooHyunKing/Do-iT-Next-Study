@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "courses": [
+    {
+      "id": 1,
+      "code": "CGEX1034",
+      "name": "아주도전2",
+      "courseId": "X649-9",
+      "professorName": "이환용"
+    },
+    {
+      "id": 2,
+      "code": "SCE436",
+      "name": "인간과 컴퓨터 상호작용",
+      "courseId": "F050-1",
+      "professorName": "이환용"
+    }
+  ]
+}
