@@ -4,6 +4,11 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "hello",
+      "author": "world"
     }
   ],
   "comments": [
@@ -18,17 +23,27 @@
   },
   "courses": [
     {
-      "id": 1,
       "code": "CGEX1034",
       "name": "아주도전2",
       "courseId": "X649-9",
       "professorName": "이환용"
     },
     {
-      "id": 2,
       "code": "SCE436",
       "name": "인간과 컴퓨터 상호작용",
       "courseId": "F050-1",
+      "professorName": "이환용"
+    },
+    {
+      "code": "SCE4910",
+      "name": "창업실습 2",
+      "courseId": "F036-1",
+      "professorName": "이환용"
+    },
+    {
+      "code": "SCE499",
+      "name": "창업실습 1",
+      "courseId": "F037-1",
       "professorName": "이환용"
     }
   ]

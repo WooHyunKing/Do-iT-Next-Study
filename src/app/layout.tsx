@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import styles from "./layout.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Create Next App",
