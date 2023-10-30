@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 interface ICourse {
   code: string;
@@ -8,17 +7,12 @@ interface ICourse {
   professtorName: string;
 }
 
-const Course = () => {
-  const [courses, setCourses] = useState<ICourse[]>([]);
-  const getCourse = async () => {
-    const response = await fetch("http://localhost:9999/courses");
-    const courses = await response.json();
-    console.log(courses);
-    setCourses(courses);
-  };
-  useEffect(() => {
-    getCourse();
-  }, []);
+const Course = async () => {
+  const response = await fetch("http://localhost:9999/courses", {
+    cache: "no-cache",
+  });
+  const courses: ICourse[] = await response.json();
+
   return (
     <div>
       {courses.map((course) => (
